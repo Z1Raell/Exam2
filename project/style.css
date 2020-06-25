@@ -1,0 +1,25 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(252, 252, 252, 0.897);
+}
+.modal-content {
+  background-color: rgb(236, 236, 236);
+  margin: 15% auto;
+  padding: 20px;
+  border: dimgray 1px solid;
+  width: 40%;
+}
+
+.close {
+  color: rgb(255, 189, 189);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}

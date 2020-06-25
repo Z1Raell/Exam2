@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Books</title>
+</head>
+
+<body>
+  <header>LIBRARY</header>
+  <main>
+    <nav>
+      <a href="boks.html">Books</a>
+      <a href="visitors.html class=" active"">Visitors</a>
+      <a href="cards.html">Cards</a>
+      <a href="statistic.html">Statistic</a>
+    </nav>
+    <div>
+      <header>ALL VISITORS</header>
+      <input type="button" value="new visitor" id="callModalWindow" />
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Create visitor</p>
+          <form name="createVisitor">
+            <p><input type="text" name="name" id="name" required>Pull name</p>
+            <p><input type="tel" name="pfone" id="phone" required
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}">Pfone number</p>
+            <input type="button" value="Save" id="save">
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <div>
+        <div>
+          <p>Sort by:</p>
+          <form action="" method="">
+            <p>
+              <select name="">
+                <option selected value="id">id</option>
+                <option value="name">name</option>
+                <option value="phone">phone</option>
+              </select>
+            </p>
+            <p><input type="button" value="Sort" /></p>
+          </form>
+        </div>
+        <div>
+          <p>Search:</p>
+          <form action="" method="">
+            <input type="text" name="" id="">
+            <p><input type="button" value="Search" /></p>
+          </form>
+        </div>
+      </div>
+      <table id="visitorsList" border="">
+      </table>
+    </div>
+  </main>
+  <script src="example.js"></script>
+</body>
+
+</html>
